@@ -1,0 +1,30 @@
+.typewriterWrapper {
+  display: inline-flex;
+  align-items: center;
+  white-space: pre-wrap;
+  font-family: inherit;
+  color: #9ca3af; /* gray-400 equivalent */
+}
+
+.text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: currentColor;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
